@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aplikasi Kasir Makanan</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🍽️ Aplikasi Kasir Makanan</h1>
+    <form id="formPesanan">
+      <label for="menu">Pilih Menu Makanan:</label>
+      <select id="menu">
+        <option value="20000">Nasi Goreng - Rp 20.000</option>
+        <option value="15000">Mie Ayam - Rp 15.000</option>
+        <option value="10000">Bakso - Rp 10.000</option>
+        <option value="25000">Ayam Geprek - Rp 25.000</option>
+        <option value="18000">Soto Ayam - Rp 18.000</option>
+        <option value="22000">Rendang - Rp 22.000</option>
+      </select>
+
+      <label for="jumlah">Jumlah Porsi:</label>
+      <input type="number" id="jumlah" min="1" value="1" />
+
+      <button type="button" onclick="hitungTotal()">💰 Hitung Total</button>
+    </form>
+
+    <div id="hasil" class="output-box"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
